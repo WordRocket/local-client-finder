@@ -20,6 +20,14 @@ STATUS_COLOR = {
     "FACEBOOK ONLY": "#d35400",
     "SITE NOT LINKED": "#2c7be5",
     "WEAK SITE": "#7f8c8d",
+    "DOWN": "#8e1b1b",
+    "PARKED": "#8e1b1b",
+    "ERROR": "#c0392b",
+    "NOT SECURE": "#d35400",
+    "DATED": "#b7791f",
+    "SLOW": "#7f8c8d",
+    "NEW": "#1f8f5f",
+    "NEW · NO SITE": "#1f8f5f",
 }
 
 
@@ -49,7 +57,7 @@ def cell(value):
 
 
 def write_html(rows, title, path):
-    no_site = sum(1 for r in rows if (r.get("status") or "").upper() in ("NO SITE", "FACEBOOK ONLY"))
+    flagged = sum(1 for r in rows if (r.get("status") or "").strip())
     body = []
     for i, r in enumerate(rows, 1):
         status = (r.get("status") or "").upper()
@@ -96,13 +104,13 @@ td.n{{text-align:right;white-space:nowrap}} .sub{{color:var(--muted);font-size:1
 a{{color:#2c7be5}} footer{{color:var(--muted);font-size:13px;margin-top:16px}}
 </style></head><body><main>
 <h1>Leads: {cell(title)}</h1>
-<div class=meta>{len(rows)} leads · {no_site} with no website or Facebook only · {date.today().isoformat()} · from public Google Maps listings</div>
+<div class=meta>{len(rows)} leads · {flagged} with a verified status · {date.today().isoformat()} · from public listings</div>
 <div class=wrap><table id=t><thead><tr>
 <th>#</th><th>Score</th><th>Business</th><th>Status</th><th>Rating</th><th>Reviews</th><th>Phone</th><th>Links</th><th>Why + opener</th>
 </tr></thead><tbody>
 {''.join(body)}
 </tbody></table></div>
-<footer>Public business listing data only. Contact businesses one at a time and follow your local anti-spam rules.
+<footer>Public business data only. Contact businesses one at a time and follow your local anti-spam rules.
 Want a preview site to show your #1 lead? <a href="https://app.ranksite.ai" target=_blank>RankSite</a> builds one from their Google listing.</footer>
 </main>
 <script>

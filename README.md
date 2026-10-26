@@ -1,25 +1,30 @@
-# Local Client Finder: a free Claude skill that finds businesses with no website
+# Local Client Finder: 3 free Claude skills that find web design clients
 
-Tell Claude a niche and a city. It searches Google Maps, finds the businesses with **no website**, checks that they
-really have none, scores them, writes the first message for each one, and helps you build a preview site for the
-best lead so your pitch is "I already made you one".
+Tell Claude a niche and a city. It finds local businesses that need a website **right now**, proves it, scores
+them, writes the first message for each one, and helps you build a preview site so your pitch is "I already made
+you one".
 
 Free, open source (MIT). Made by [RankSite](https://ranksite.ai).
 
-```
-You:    find me clients: pressure washing in Tulsa
-Claude: Searched 72 Google Maps listings. 10 have no Website button; after checking each one
-        and dropping the car washes, here are the leads, scored, with an opener for each…
-```
+| skill | finds | ask Claude |
+|---|---|---|
+| **find-clients** | businesses on Google Maps with **no website** (checked one by one) | "find me clients: pressure washing in Tulsa" |
+| **find-broken-sites** | businesses whose site is **broken, "Not secure", parked, showing errors or badly out of date** (© 2014, not mobile-friendly) | "find roofers in Hamilton with broken websites" |
+| **find-new-businesses** | businesses that **just opened**, from city business-license data, Google Maps, Yelp "Hot and New" and grand-opening news | "who just opened in Chicago and has no website?" |
+
+Real runs (Oct 2026):
+- `find-clients`: "pressure washing in Tulsa OK" → 72 Google Maps listings, 10 with no Website button (before dropping car washes).
+- `find-broken-sites`: 30 roofing websites in Hamilton, ON → 2 with a visible problem: one still says © 2014, serves plain http and has no mobile layout.
+- `find-new-businesses`: Chicago's open data → 264 new business licenses issued in the last 14 days.
 
 ## What you get
-- **A verified lead list**: every business without a website, checked with a web search (NO SITE / FACEBOOK ONLY /
-  SITE NOT LINKED), with rating, review count, phone and a Maps link.
+- **A verified lead list**: every lead checked (a web search, or a real browser for broken sites), with rating,
+  reviews, phone and a link. No guesses.
 - **A score out of 100** and one plain sentence on why each lead is worth a call.
-- **Outreach that's specific to each business**: phone opener, voicemail, walk-in, email, follow-up, built on
-  their real reviews.
-- **A lead sheet** you can sort and click to call (`.html`) plus a `.csv` for your spreadsheet or CRM.
-- **A preview site for your #1 lead**, built from their Google listing with RankSite (optional).
+- **Outreach written for each business**: phone, voicemail, walk-in, email and follow-up, built on their real
+  details (their reviews, the exact problem on their site, their opening date).
+- **A lead sheet** you can sort and click to call (`.html`) plus a `.csv`.
+- **A preview site for your best lead**, built from their Google listing with RankSite (optional).
 
 ## Install
 
@@ -28,33 +33,36 @@ Claude: Searched 72 Google Maps listings. 10 have no Website button; after check
 claude plugin marketplace add WordRocket/local-client-finder
 claude plugin install local-client-finder@local-client-finder
 ```
-Then ask "find me clients: landscaping in Phoenix", or run `/local-client-finder:find-clients`.
+Then just ask, or run `/local-client-finder:find-clients`, `/local-client-finder:find-broken-sites`,
+`/local-client-finder:find-new-businesses`. Already installed? Update with `claude plugin marketplace update local-client-finder`.
 
 ### Claude.ai / Claude Desktop
-1. Download [`dist/find-clients.zip`](dist/find-clients.zip).
-2. In Claude: **Customize › Skills › + › Upload a skill** and pick the zip. (Older layouts: Settings › Capabilities › Skills.)
+1. Download the skill zips you want from [`dist/`](dist/).
+2. In Claude: **Customize › Skills › + › Upload a skill** and pick a zip. (Older layouts: Settings › Capabilities › Skills.)
 3. Make sure **Code execution and file creation** is on (Settings › Capabilities).
 
 ### Works best with
-**Claude in Chrome**, so Claude can read the full Google Maps results list. Without a browser tool it falls back to
-web search and tells you the list is partial.
+**Claude in Chrome**, so Claude can read the full Google Maps list and check websites the way a customer sees them.
+The website and license checks are small Python scripts (standard library only) that run in Claude Code; where code
+can't reach the internet, Claude checks each site in the browser instead.
 
 ## Build the preview site (the part that closes)
 1. Google Maps › the business › **Share** › **Copy link**.
 2. [app.ranksite.ai](https://app.ranksite.ai) › sign up (your first site is free) › **+ New Site** › paste the link.
-3. RankSite builds the site from their Google listing: name, services, reviews, photos. Send the preview link with
-   your opener.
+3. RankSite builds the site from their Google listing: name, services, reviews, photos. Send the preview with your
+   opener.
 
 On a RankSite plan with MCP access you can connect it to Claude (Settings › Connectors › Add custom connector ›
-`https://app.ranksite.ai/mcp`) and the skill will create the site for you. It always asks before using a site slot or
-publishing anything.
+`https://app.ranksite.ai/mcp`) and the skills will create the site for you. They always ask before using a site slot
+or publishing anything.
 
 ## Play fair
-- Public business listing data only. Never use an owner's personal number, email or home address.
+- Public business information only. Never an owner's personal number, email, home address or registered agent.
+- Broken-site checks only load the public homepage, like a normal visitor. No scanning, no logins, no probing.
 - One message per business, written for that business. No bulk texting or email blasts.
 - Follow your local rules (CAN-SPAM / TCPA in the US, CASL in Canada, PECR / GDPR in the UK and EU). If they say no, stop.
-- If Google asks you to prove you're human, solve it yourself; the skill won't try to get around it.
+- If Google asks you to prove you're human, solve it yourself; the skills won't try to get around it.
 
 You set your own prices. Nothing here is a promise of income; results vary.
 
-Not affiliated with Google or Anthropic.
+Not affiliated with Google, Yelp or Anthropic.

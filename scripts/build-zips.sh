@@ -1,9 +1,12 @@
 #!/bin/sh
-# Builds dist/find-clients.zip for uploading to claude.ai (Customize › Skills › Upload a skill).
+# Builds one zip per skill into dist/ for uploading to claude.ai (Customize › Skills › Upload a skill).
 set -e
 cd "$(dirname "$0")/.."
 rm -rf dist && mkdir dist
 cd plugins/local-client-finder/skills
-zip -qr ../../../dist/find-clients.zip find-clients -x '*.DS_Store' '*__pycache__*'
+for s in */; do
+  s=${s%/}
+  zip -qr "../../../dist/$s.zip" "$s" -x '*.DS_Store' '*__pycache__*'
+done
 cd ../../..
 ls -1 dist
