@@ -59,6 +59,8 @@ PARKED_SIGNS = [
     ("Account Suspended", "hosting account suspended"),
     ("Website Expired", "website/hosting expired"), ("This site has expired", "website/hosting expired"),
     ("domain has expired", "domain expired"),
+    ("This domain isn't connected to a site", "domain not connected to any site (Wix)"),
+    ("Reconnect Your Domain", "domain not connected to any site"),
 ]
 BLOCK_SIGNS = ["Just a moment...", "cf-chl", "Attention Required! | Cloudflare", "captcha", "Access denied"]
 
@@ -163,6 +165,11 @@ def check(website):
     if status in (401, 403, 429, 503) and any(s.lower() in low for s in BLOCK_SIGNS):
         out["issues"].append("BLOCKED")
         out["notes"].append("a bot check blocked the test: open it in a browser before saying anything")
+        return finish(out)
+    if 520 <= status <= 530:
+        # Cloudflare's own error codes: usually the firewall refusing a script, not the real site
+        out["issues"].append("CHECK")
+        out["notes"].append("Cloudflare returned %d to the script: open it in a browser" % status)
         return finish(out)
     if status >= 500:
         out["issues"].append("ERROR")

@@ -142,5 +142,7 @@ monthly hosting/SEO) but don't quote income or promise clients. Results vary.
 ## Error handling
 - Google shows a CAPTCHA or "unusual traffic": stop, tell the user, and let them solve it themselves. Never try to
   get around it.
+- The list ends early with "You're seeing a limited view of Google Maps": Google limits signed-out browsers. Ask the
+  user to sign in to Google in that browser (or use their own Chrome with Claude in Chrome), then search again.
 - Very few results: widen the area or try a sister niche (Step 1).
 - A listing's details look wrong (closed, moved): leave it out rather than guess.

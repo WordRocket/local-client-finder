@@ -10,7 +10,10 @@
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   let last = 0, still = 0;
   for (let i = 0; i < 40; i++) {
+    // Scroll the last result into view: works whichever element Google made scrollable (narrow or wide windows).
     feed.scrollBy(0, 4000);
+    const lastCard = feed.lastElementChild;
+    if (lastCard) lastCard.scrollIntoView({block: 'end'});
     await sleep(1500);
     const n = feed.querySelectorAll('a[href*="/maps/place/"]').length;
     if (n >= MAX || /end of the list/i.test(feed.innerText)) break;

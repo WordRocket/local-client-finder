@@ -93,3 +93,8 @@ the site from it. With the RankSite connector (plans with MCP access) you can `c
 found; confirm first, never publish without a yes.
 
 You set your own prices; don't promise income or results.
+
+## Error handling
+- Google shows a CAPTCHA or "unusual traffic": stop and let the user solve it themselves. Never try to get around it.
+- A Google Maps list ends early with "You're seeing a limited view of Google Maps": Google limits signed-out browsers.
+  Ask the user to sign in to Google in that browser (or use their own Chrome with Claude in Chrome), then search again.
