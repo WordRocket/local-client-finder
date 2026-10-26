@@ -1,0 +1,12 @@
+{
+  "name": "local-client-finder",
+  "owner": { "name": "RankSite", "url": "https://ranksite.ai" },
+  "metadata": { "description": "Find local businesses with no website and turn them into web design clients", "version": "1.0.0" },
+  "plugins": [
+    {
+      "name": "local-client-finder",
+      "source": "./plugins/local-client-finder",
+      "description": "Google Maps → verified no-website leads → scored list + outreach → preview site with RankSite"
+    }
+  ]
+}

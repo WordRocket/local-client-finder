@@ -1,0 +1,9 @@
+{
+  "name": "local-client-finder",
+  "description": "Find local businesses with no website on Google Maps, score them as leads, write the outreach, and build a preview site for the best one with RankSite.",
+  "version": "1.0.0",
+  "author": { "name": "RankSite", "url": "https://ranksite.ai" },
+  "homepage": "https://ranksite.ai",
+  "license": "MIT",
+  "keywords": ["leads", "web-design", "local-business", "google-maps", "freelance", "ranksite"]
+}
