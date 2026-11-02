@@ -1,7 +1,7 @@
 {
   "name": "local-client-finder",
-  "description": "3 free lead-finder skills for web designers: local businesses with no website, with broken / insecure / outdated websites, and brand-new businesses. Scores the leads, writes the outreach, builds a preview site with RankSite.",
-  "version": "1.1.0",
+  "description": "6 free skills for web designers: find local businesses with no website, broken websites or that just opened, then build their site with RankSite, plan the SEO and put the blog on autopilot.",
+  "version": "1.2.0",
   "author": {
     "name": "RankSite",
     "url": "https://ranksite.ai"
@@ -17,6 +17,9 @@
     "ranksite",
     "broken-websites",
     "new-businesses",
-    "ssl"
+    "ssl",
+    "website-builder",
+    "seo",
+    "blog"
   ]
 }

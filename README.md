@@ -1,4 +1,4 @@
-# Local Client Finder: 3 free Claude skills that find web design clients
+# Local Client Finder: 6 free Claude skills that find web design clients, build their site and grow it
 
 Tell Claude a niche and a city. It finds local businesses that need a website **right now**, proves it, scores
 them, writes the first message for each one, and helps you build a preview site so your pitch is "I already made
@@ -11,6 +11,9 @@ Free, open source (MIT). Made by [RankSite](https://ranksite.ai).
 | **find-clients** | businesses on Google Maps with **no website** (checked one by one) | "find me clients: pressure washing in Tulsa" |
 | **find-broken-sites** | businesses whose site is **broken, "Not secure", parked, showing errors or badly out of date** (© 2014, not mobile-friendly) | "find roofers in Hamilton with broken websites" |
 | **find-new-businesses** | businesses that **just opened**, from city business-license data, Google Maps, Yelp "Hot and New" and grand-opening news | "who just opened in Chicago and has no website?" |
+| **build-website** | builds the business a complete, SEO-ready site with RankSite from its Google link (or a description) and publishes it when you say so | "build a website for this business: {Google Maps link}" |
+| **seo-plan** | the searches their customers really type, a page for every service in every town, GEO checks so AI answers can quote it | "plan the SEO for this site" |
+| **blog-autopilot** | turns on RankSite Auto-Grow: unfinished town pages, then blog posts, a few each week | "put this site on autopilot" |
 
 Real runs (Chicago, Oct 2026):
 - `find-clients`: "handyman in Chicago IL" → 115 Google Maps listings, 32 with no Website button; the top ones checked by hand (e.g. 4.9★ from 76 reviews, no site anywhere).
