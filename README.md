@@ -22,6 +22,8 @@ Real runs (Chicago, Oct 2026):
 - `find-new-businesses`: Chicago's open data → 264 new business licenses issued in 14 days. Spot check of 12 new shops and restaurants: 8 had no website or weren't on Google Maps.
 
 ## Free playbook
+[**The full setup guide: RankSite + Claude, in 5 minutes**](playbooks/setup-guide.md) ([PDF](playbooks/setup-guide.pdf))
+
 [**50 ways to land website clients, ranked S tier to C tier**](playbooks/50-ways-to-land-website-clients.md) ([PDF](playbooks/50-ways-to-land-website-clients.pdf)): what to do first, with the Claude prompt for each.
 
 ## What you get
