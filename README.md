@@ -1,4 +1,4 @@
-# Local Client Finder: 6 free Claude skills that find web design clients, build their site and grow it
+# Local Client Finder: 7 free Claude skills that find web design clients, build their site and grow it
 
 Tell Claude a niche and a city. It finds local businesses that need a website **right now**, proves it, scores
 them, writes the first message for each one, and helps you build a preview site so your pitch is "I already made
@@ -8,6 +8,7 @@ Free, open source (MIT). Made by [RankSite](https://ranksite.ai).
 
 | skill | finds | ask Claude |
 |---|---|---|
+| **website-maxing** | the whole playbook in one prompt: finds who needs a site, builds the best lead's site with RankSite, a page for every service in every town, checks Google + ChatGPT can read it, writes the pitch | "run the website maxing playbook for roofers in Tulsa" |
 | **find-clients** | businesses on Google Maps with **no website** (checked one by one) | "find me clients: pressure washing in Tulsa" |
 | **find-broken-sites** | businesses whose site is **broken, "Not secure", parked, showing errors or badly out of date** (© 2014, not mobile-friendly) | "find roofers in Hamilton with broken websites" |
 | **find-new-businesses** | businesses that **just opened**, from city business-license data, Google Maps, Yelp "Hot and New" and grand-opening news | "who just opened in Chicago and has no website?" |
@@ -19,6 +20,9 @@ Real runs (Chicago, Oct 2026):
 - `find-clients`: "handyman in Chicago IL" → 115 Google Maps listings, 32 with no Website button; the top ones checked by hand (e.g. 4.9★ from 76 reviews, no site anywhere).
 - `find-broken-sites`: 70 Chicago handyman websites → 10 broken, each confirmed in a real browser: 7 domains that no longer exist, 1 "this domain isn't connected to a site", 1 that won't load, 1 full-page security warning. 2 more footers still say © 2019 / © 2020–2021.
 - `find-new-businesses`: Chicago's open data → 264 new business licenses issued in 14 days. Spot check of 12 new shops and restaurants: 8 had no website or weren't on Google Maps.
+
+## Free playbook
+[**50 ways to land website clients, ranked S tier to C tier**](playbooks/50-ways-to-land-website-clients.md) ([PDF](playbooks/50-ways-to-land-website-clients.pdf)): what to do first, with the Claude prompt for each.
 
 ## What you get
 - **A verified lead list**: every lead checked (a web search, or a real browser for broken sites), with rating,
