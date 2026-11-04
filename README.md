@@ -47,7 +47,7 @@ Then just ask, or run `/local-client-finder:find-clients`, `/local-client-finder
 
 ### Claude.ai / Claude Desktop
 1. Download the skill zips you want from [`dist/`](dist/).
-2. In Claude: **Customize › Skills › + › Upload a skill** and pick a zip. (Older layouts: Settings › Capabilities › Skills.)
+2. In Claude: **Customize › Skills › + Create skill › Upload a skill** and pick a zip. (Older layouts: Settings › Capabilities › Skills.)
 3. Make sure **Code execution and file creation** is on (Settings › Capabilities).
 
 ### Works best with

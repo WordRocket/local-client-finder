@@ -40,7 +40,13 @@ def load_rows(path):
         data = json.load(f)
     rows = data.get("rows", []) if isinstance(data, dict) else data
     rows = [r for r in rows if isinstance(r, dict) and r.get("name")]
-    rows.sort(key=lambda r: (-(r.get("score") or 0), -(r.get("reviews") or 0)))
+    def n(v):  # scores/reviews may arrive as numbers or text ("82", "1,204"); never crash on them
+        try:
+            return float(str(v).replace(",", "").strip() or 0)
+        except ValueError:
+            return 0.0
+
+    rows.sort(key=lambda r: (-n(r.get("score")), -n(r.get("reviews"))))
     return rows
 
 

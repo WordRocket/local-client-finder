@@ -27,9 +27,9 @@ Never invent a business or a date. Every lead needs a source (dataset row, listi
 ## Step 1 — Pull new businesses (use every source that exists for the city)
 
 **A. City open data (best: official, dated, free).** Many cities publish every new business license.
-1. `python3 [skill_dir]/scripts/new_licenses.py find "<city>"` searches public Socrata portals (Chicago, Seattle,
+1. `python3 ${CLAUDE_SKILL_DIR}/scripts/new_licenses.py find "<city>"` searches public Socrata portals (Chicago, Seattle,
    Calgary, Cincinnati, New Orleans, Norfolk, Berkeley, Winnipeg, Delaware and many more) for license datasets.
-2. `python3 [skill_dir]/scripts/new_licenses.py pull <domain> <dataset-id> --days 30 --match "<niche regex>" --out new.json`
+2. `python3 ${CLAUDE_SKILL_DIR}/scripts/new_licenses.py pull <domain> <dataset-id> --days 30 --match "<niche regex>" --out new.json`
    returns `{name, category, date, address, home_based}`, newest first. Check the printed column choice; some
    datasets need a filter for NEW licenses only (Chicago: `--where "application_type='ISSUE'"`).
 3. No Socrata dataset? Web search `"<city>" open data business licenses` (many cities use ArcGIS Hub or CKAN with a
@@ -72,7 +72,7 @@ timing to set both up."
 
 ## Step 4 — Lead sheet
 Add `status`, `score`, `why`, `opener`, keep `date` and the source, then run
-`python3 [skill_dir]/scripts/build_report.py leads.json --title "new businesses in <city>"`.
+`python3 ${CLAUDE_SKILL_DIR}/scripts/build_report.py leads.json --title "new businesses in <city>"`.
 It writes a sortable `.html` lead sheet + `.csv`. In chat lead with the count and source, e.g. "Chicago issued 264
 new business licenses in the last 14 days; 80 are food, beauty, cleaning, fitness or auto. Here are the ones with no
 website yet."

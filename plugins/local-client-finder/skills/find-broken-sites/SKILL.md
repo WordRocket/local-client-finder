@@ -36,8 +36,8 @@ Without a browser tool: web search `<niche> <city>` and collect the businesses' 
 
 ## Step 2 — Check every website
 Save the rows as `sites.json` and run:
-`python3 [skill_dir]/scripts/check_sites.py sites.json --out checked.json`
-(`[skill_dir]` = the folder this SKILL.md is in. Standard library only. If your environment can't reach the internet
+`python3 ${CLAUDE_SKILL_DIR}/scripts/check_sites.py sites.json --out checked.json`
+(`${CLAUDE_SKILL_DIR}` = the folder this SKILL.md is in; Claude Code fills it in; on Claude.ai, run it from this skill's folder. Standard library only. If your environment can't reach the internet
 from code, skip to Step 3 and check each site in the browser instead.)
 
 It loads each homepage (https first, then http) and adds `check.issues`:
@@ -74,7 +74,7 @@ business, scaring off new customers at the door."
 
 ## Step 5 — Lead sheet
 Give each lead `status` = its worst verified issue (e.g. `NOT SECURE`), plus `score`, `why`, `opener`, then run
-`python3 [skill_dir]/scripts/build_report.py leads.json --title "<niche> in <city>: broken sites"`.
+`python3 ${CLAUDE_SKILL_DIR}/scripts/build_report.py leads.json --title "<niche> in <city>: broken sites"`.
 It writes a sortable `.html` lead sheet and a `.csv`. In chat, lead with the count: e.g. "Checked 30 roofing websites
 in Hamilton. 2 have a visible problem; here they are, with proof."
 

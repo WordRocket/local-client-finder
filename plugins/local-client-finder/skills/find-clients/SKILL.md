@@ -87,8 +87,8 @@ them, but anyone who searches their name lands on Yelp."
 ## Step 4 — Deliver the lead sheet
 
 1. Save the leads as JSON (an array of rows with the extra fields `status`, `score`, `why`, `opener`) and run:
-   `python3 [skill_dir]/scripts/build_report.py leads.json --title "<niche> in <city>"`
-   (`[skill_dir]` = the folder this SKILL.md is in; standard library only). It writes
+   `python3 ${CLAUDE_SKILL_DIR}/scripts/build_report.py leads.json --title "<niche> in <city>"`
+   (`${CLAUDE_SKILL_DIR}` = the folder this SKILL.md is in; Claude Code fills it in; on Claude.ai, run it from this skill's folder; standard library only). It writes
    `leads-<slug>.csv` + `leads-<slug>.html` (sortable table, click-to-call, Maps links).
 2. In chat, lead with the count and the top 5:
    e.g. "Searched 72 Google Maps listings for pressure washing in Tulsa. 9 have no website. The best 5: …"
