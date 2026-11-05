@@ -1,4 +1,4 @@
-# Local Client Finder: 7 free Claude skills that find web design clients, build their site and grow it
+# Local Client Finder: 8 free Claude skills that find web design clients, build their site and grow it
 
 Tell Claude a niche and a city. It finds local businesses that need a website **right now**, proves it, scores
 them, writes the first message for each one, and helps you build a preview site so your pitch is "I already made
@@ -9,6 +9,7 @@ Free, open source (MIT). Made by [RankSite](https://ranksite.ai).
 | skill | finds | ask Claude |
 |---|---|---|
 | **website-maxing** | the whole playbook in one prompt: finds who needs a site, builds the best lead's site with RankSite, a page for every service in every town, checks Google + ChatGPT can read it, writes the pitch | "run the website maxing playbook for roofers in Tulsa" |
+| **client-agents** | your **top 3 clients right now**: 5 finder agents at once (just opened · asking online for a website · reviews complaining about the site · broken sites · no website), a critic that throws out weak leads, a vote, a RankSite preview site for #1 and the first email as a **Gmail draft** | "run the client agents for Chicago" |
 | **find-clients** | businesses on Google Maps with **no website** (checked one by one) | "find me clients: pressure washing in Tulsa" |
 | **find-broken-sites** | businesses whose site is **broken, "Not secure", parked, showing errors or badly out of date** (© 2014, not mobile-friendly) | "find roofers in Hamilton with broken websites" |
 | **find-new-businesses** | businesses that **just opened**, from city business-license data, Google Maps, Yelp "Hot and New" and grand-opening news | "who just opened in Chicago and has no website?" |
@@ -42,7 +43,7 @@ Real runs (Chicago, Oct 2026):
 claude plugin marketplace add WordRocket/local-client-finder
 claude plugin install local-client-finder@local-client-finder
 ```
-Then just ask, or run `/local-client-finder:find-clients`, `/local-client-finder:find-broken-sites`,
+Then just ask, or run `/local-client-finder:client-agents`, `/local-client-finder:find-clients`, `/local-client-finder:find-broken-sites`,
 `/local-client-finder:find-new-businesses`. Already installed? Update with `claude plugin marketplace update local-client-finder`.
 
 ### Claude.ai / Claude Desktop

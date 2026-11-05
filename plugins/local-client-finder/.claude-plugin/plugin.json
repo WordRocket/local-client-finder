@@ -1,7 +1,7 @@
 {
   "name": "local-client-finder",
-  "description": "7 free skills for web designers (incl. the website-maxing playbook): find local businesses with no website, broken websites or that just opened, then build their site with RankSite, plan the SEO and put the blog on autopilot.",
-  "version": "1.3.0",
+  "description": "8 free skills for web designers: client-agents (6 Claudes find your top 3 clients, build #1 a preview site, draft the email in Gmail), the website-maxing playbook, find businesses with no website, broken websites or that just opened, build their site with RankSite, plan the SEO and put the blog on autopilot.",
+  "version": "1.4.0",
   "author": {
     "name": "RankSite",
     "url": "https://ranksite.ai"
@@ -20,6 +20,9 @@
     "ssl",
     "website-builder",
     "seo",
-    "blog"
+    "blog",
+    "agents",
+    "gmail",
+    "outreach"
   ]
 }
