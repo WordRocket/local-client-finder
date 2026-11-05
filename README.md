@@ -22,10 +22,14 @@ Real runs (Chicago, Oct 2026):
 - `find-broken-sites`: 70 Chicago handyman websites → 10 broken, each confirmed in a real browser: 7 domains that no longer exist, 1 "this domain isn't connected to a site", 1 that won't load, 1 full-page security warning. 2 more footers still say © 2019 / © 2020–2021.
 - `find-new-businesses`: Chicago's open data → 264 new business licenses issued in 14 days. Spot check of 12 new shops and restaurants: 8 had no website or weren't on Google Maps.
 
-## Free playbook
+## Free playbooks
 [**The full setup guide: RankSite + Claude, in 5 minutes**](playbooks/setup-guide.md) ([PDF](playbooks/setup-guide.pdf))
 
 [**50 ways to land website clients, ranked S tier to C tier**](playbooks/50-ways-to-land-website-clients.md) ([PDF](playbooks/50-ways-to-land-website-clients.pdf)): what to do first, with the Claude prompt for each.
+
+[**Pick a niche and an offer that sells itself**](playbooks/niche-and-offer-worksheet.md) ([PDF](playbooks/niche-and-offer-worksheet.pdf)): a 10-minute worksheet: score trades in your town, your one-line offer, three packages, market prices, the founding-client deal.
+
+[**8 places your next client is hiding**](playbooks/lead-sources-cheat-sheet.md) ([PDF](playbooks/lead-sources-cheat-sheet.pdf)): every lead source with the exact search and the first thing to say, plus the 20-in-20 routine.
 
 ## What you get
 - **A verified lead list**: every lead checked (a web search, or a real browser for broken sites), with rating,
