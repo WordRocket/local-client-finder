@@ -6,8 +6,8 @@ you can do the work, shown in a way an owner can check in 30 seconds.
 ---
 
 ## Why proof matters more than pitch
-- In a GoDaddy survey of small business owners, 64% said they'd feel suspicious of a web professional with no reviews,
-  and many said they'd rather hire someone they know than pick from a portfolio.
+- In a GoDaddy survey of 204 owners who'd hired a web pro (2021), 64% said they'd feel suspicious of a web professional
+  with no reviews, and 59% said they'd pick someone they know personally.
 - Owners judge you the way their customers judge them: BrightLocal's 2026 survey found 47% of consumers won't use a
   local business with fewer than 20 reviews.
 So lead with something they can SEE about their own business, and borrow trust from people they know.
@@ -71,5 +71,5 @@ deal (Google doesn't allow reviews in exchange for anything).
 ---
 
 Free skills that find the businesses and build the previews: github.com/WordRocket/local-client-finder · RankSite:
-app.ranksite.ai (our own tool; your first site is free). Sources: GoDaddy "What clients want" survey; BrightLocal Local
+app.ranksite.ai (our own tool; your first site is free). Sources: GoDaddy "What clients want" survey (2021); BrightLocal Local
 Consumer Review Survey 2026 (1,002 US adults); Google Business Profile eligibility guidelines. Results vary.

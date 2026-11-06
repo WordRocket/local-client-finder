@@ -11,8 +11,9 @@ Most cities publish every new business license as open data, often updated daily
 - **Good lead:** a storefront or service business that opened in the last 30 days. Skip home-based licenses, renewals and
   chains.
 - **First move:** "Congrats on opening. I noticed you're not on Google yet / don't have a site, so I made you a preview."
-- **Scale:** Chicago issued 264 new business licenses in 14 days (Oct 2026). In a spot check of 12 new shops and
-  restaurants, 8 had no website or weren't on Google Maps.
+- **Scale:** Chicago issued 286 new business licenses from October 15 to 28, 2026. In a spot check of 12 new shops and
+  restaurants (Oct 2026), 8 had no website or weren't on Google Maps. Where to find your city's list: the free "Where 30
+  cities publish brand-new businesses" PDF.
 - *Automated by the free* `find-new-businesses` *skill.*
 
 ## 2. Great reviews, no website (Google Maps)
@@ -58,7 +59,8 @@ Other people get asked "do you know a website person?" every week.
 - **Goal:** one real conversation and one follow-up per event.
 
 ## 8. Your own network (the warm 50)
-In a GoDaddy survey of small business owners, 73% said they find web designers through recommendations.
+Word of mouth is still the #1 way local owners get new customers (35% in BrightLocal's 2026 survey of 1,002 owners),
+and in a GoDaddy survey of 204 owners who'd hired a web pro (2021), 73% found them through recommendations.
 - **Do it:** list 50 people you know (family, friends, old coworkers, your barber, your mechanic).
 - **Ask:** "Quick one: who do you know who runs a business with no website, or an old one? I'm helping local businesses
   get found on Google." That's it. Don't pitch them, ask for the introduction.
@@ -77,4 +79,4 @@ Then contact the best 5 the same day. Walk in or call before you email.
 Free skills that automate sources 1 to 5: github.com/WordRocket/local-client-finder (the `client-agents` skill runs five
 of them at once and picks your top 3). Follow local anti-spam and calling rules (CAN-SPAM and TCPA in the US, CASL in
 Canada, PECR/GDPR in the UK/EU): one personal message per business, stop when they say no, no cold texting.
-Data: City of Chicago open data and our Google Maps checks, Oct 2026; GoDaddy "What clients want" survey. Results vary.
+Data: City of Chicago open data and our Google Maps checks, Oct 2026; GoDaddy "What clients want" survey (2021); BrightLocal Small Business Marketing Report 2026. Results vary.

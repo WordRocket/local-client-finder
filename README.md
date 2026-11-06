@@ -39,6 +39,20 @@ Real runs (Chicago, Oct 2026):
 
 [**Keep clients paying (and sending you friends)**](playbooks/keep-clients-cheat-sheet.md) ([PDF](playbooks/keep-clients-cheat-sheet.pdf)): what the monthly fee covers, the one-page report, the 90-day review, referral asks, the cancel conversation.
 
+**New (Nov 2026), for any service you sell to local businesses** (websites, SEO, Google profiles, reviews, social, ads, automations):
+
+[**What to charge local businesses in 2026**](playbooks/2026-price-guide.md) ([PDF](playbooks/2026-price-guide.pdf)): real price ranges for 10 services from 26 sources, hourly rates, how to set your price, payment terms.
+
+[**Where 30 cities publish brand-new businesses**](playbooks/new-business-license-finder.md) ([PDF](playbooks/new-business-license-finder.pdf)): the open-data link for each city in the US and Canada, the date field to filter and how often it updates.
+
+[**20 Claude prompts to land local clients**](playbooks/20-claude-prompts-to-land-clients.md) ([PDF](playbooks/20-claude-prompts-to-land-clients.pdf)): copy-paste prompts for every step, from scoring your niche to the monthly report.
+
+[**The one-page monthly client report**](playbooks/monthly-client-report-template.md) ([PDF](playbooks/monthly-client-report-template.pdf)): the template, where each number comes from, the honesty rules, and a filled-in example.
+
+[**Lead tracker spreadsheet**](playbooks/lead-tracker.xlsx): one row per business, follow-up dates fill in by themselves and turn orange when due, plus the daily "20 in 20" log. Opens in Excel, Google Sheets or Numbers.
+
+All sources: [playbooks/sources.md](playbooks/sources.md).
+
 ## What you get
 - **A verified lead list**: every lead checked (a web search, or a real browser for broken sites), with rating,
   reviews, phone and a link. No guesses.

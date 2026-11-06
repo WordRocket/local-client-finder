@@ -1,6 +1,8 @@
 # Outreach scripts that get replies
 
 Copy, paste, make them yours. Every script opens with something true about THEM, is short, and asks for one small thing.
+They're written for websites, the easiest door-opener. Selling SEO, reviews, social, ads or automations? Swap in your
+opener from "Openers for what you sell".
 
 ---
 
@@ -9,10 +11,13 @@ Freelancers consistently report the same ranking for local owners: **walk in > c
 to send and the easiest to ignore, so use it after a call or walk-in, or when a business only publishes an email.
 
 Three rules for every channel:
-1. **The first line is about them:** their reviews, their broken page, their opening, a question a customer asked.
-2. **Short.** Studies of millions of cold emails (Hunter, Belkins) keep finding the same thing: short messages and one or
-   two follow-ups get the most replies; long pitches get ignored.
-3. **One message per business, written for that business.** No blasts.
+1. **The first line is about them:** their reviews, their broken page, their opening, a question a customer asked. In
+   Hunter's data (31M emails, 2025), two details about the recipient lifted replies from 3.6% to 5.6%.
+2. **Short, with two follow-ups.** Belkins' study of 16.5 million cold emails found messages under 200 words beat
+   longer ones, and Hunter's look at 31 million cold emails sent in 2025 found the best sequences were three emails in
+   total (6.8% reply rate vs 3.3% for a single email); following up three or more times lowered replies.
+3. **One message per business, written for that business.** No blasts. Send from your own domain
+   (you@yourbusiness.com), not a free Gmail address: Hunter saw 5.2% replies from custom domains vs 2.5% from free ones.
 
 ---
 
@@ -61,6 +66,18 @@ Then you: "Hi [owner], [friend] said I should reach out. I had a look at [busine
 
 ---
 
+## Openers for what you sell
+| You sell | A true first line (check it before you say it) | The small thing you offer |
+|---|---|---|
+| **Websites** | "You've got 4.9★ from 112 reviews, but Googling you lands on Yelp." | a preview of their own site |
+| **Local SEO** | "When I search 'deck builder Broken Arrow', three competitors show on the map and you don't, with fewer reviews." | a one-page "what customers see" sheet |
+| **Reviews** | "Your last Google review is from March; the shop down the street got 9 this month." | a review-request text they can use today |
+| **Social** | "Your last Instagram post is from the spring, and that patio job deserved to be seen." | 3 post ideas from their own photos |
+| **Ads** | "When I search '[trade] [town]', four competitors' ads show before you do." | a list of who's advertising for their trade |
+| **Automations** | "Two of your recent reviews mention nobody calling back." | a demo of a missed-call text-back with their name on it |
+
+---
+
 ## When they answer
 - **"How much?"** "Most owners go with [middle package] at [price]. Before we talk numbers, can I show you what you'd get?"
 - **"Who is this? How did you get my number?"** "Fair question: it's on your Google listing. I'm [name], local. I'm not
@@ -70,16 +87,22 @@ Then you: "Hi [owner], [friend] said I should reach out. I had a look at [busine
 
 ---
 
-## The rules (plain words, not legal advice)
-- **US email (CAN-SPAM):** no misleading subject lines, include your mailing address and an easy opt-out, honor opt-outs
-  within 10 business days.
-- **US calls and texts (TCPA):** call by hand; never cold text and never use auto-dialers (many owners list a cell phone).
-- **Canada (CASL):** email only addresses a business publishes, about something relevant to that business, with your
-  contact details and an unsubscribe.
+## The rules (plain words, not legal advice; checked November 2026)
+- **US email (CAN-SPAM):** an honest subject line and "from" (no fake "Re:"), make it clear it's a business offer,
+  include your business name, mailing address and an easy opt-out that keeps working for 30 days, and honor opt-outs
+  within 10 business days. Fines go up to $53,088 per email.
+- **US calls and texts (TCPA + state laws):** call by hand. Never cold text: texts count as calls, and Florida,
+  Maryland, Texas, Virginia and Washington let people sue per message. No auto-dialers, prerecorded or AI voices and no
+  "ringless" voicemails to cell phones (many owners list a cell). Check the Do Not Call list before calling a cell.
+- **Canada (CASL):** email only an address the business itself published (with no "no solicitations" note next to it),
+  about something relevant to that person's job. Every message needs your name, mailing address, a way to reach you
+  and an unsubscribe. Screenshot where you found the address: it's on you to prove it. CASL covers texts and DMs too.
+  Got a referral? One message is OK if you name who referred you.
 - **UK/EU:** company addresses are OK with an opt-out in the UK; sole traders and many EU countries need consent first.
 - Everywhere: the moment anyone says stop, stop.
 
 ---
 
 Free skills that find the leads and write the first message for each: github.com/WordRocket/local-client-finder.
-Results vary.
+Sources: Hunter, State of Email Outreach 2026 (31M emails); Belkins cold email studies 2025–2026; FTC CAN-SPAM compliance
+guide; FCC TCPA rules; CRTC CASL guidance. Results vary.

@@ -4,7 +4,7 @@
   python3 scripts/build-playbooks.py playbooks/niche-and-offer-worksheet.md [more.md ...]
 
 Handles the markdown the playbooks use: # / ## / ### headings, paragraphs, - and 1. lists, > quotes, | tables |,
----, **bold**, *italic*, `code`.
+---, **bold**, *italic*, `code`, [links](https://…).
 """
 import html
 import os
@@ -27,6 +27,7 @@ th,td{border:1px solid #e3e3e3;padding:7px 8px;text-align:left;vertical-align:to
 th{background:#f6f6f7;font-weight:700;color:#1d1d1f}
 td:empty::after{content:"\\00a0";display:inline-block;height:18px}
 code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:#eef8f4;color:#0b6b52;border-radius:4px;padding:1px 5px}
+a{color:#2563eb;text-decoration:none}
 hr{border:none;border-top:1px solid #e5e5e5;margin:26px 0}
 .foot p{font-size:12px;color:#777}
 @page{size:Letter;margin:14mm}"""
@@ -34,6 +35,7 @@ hr{border:none;border-top:1px solid #e5e5e5;margin:26px 0}
 
 def inline(t):
     t = html.escape(t, quote=False)
+    t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
     t = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"(?<![*\w])\*([^*]+)\*(?![*\w])", r"<i>\1</i>", t)

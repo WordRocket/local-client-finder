@@ -6,8 +6,9 @@ of the next one.
 ---
 
 ## Why small businesses drop their marketing person
-In a vcita survey of small businesses that outsourced their marketing, the top reason for leaving was disappointing
-results (68%). Practitioners add two more: feeling like they have to chase you for small things, and budget cuts in a
+In vcita's 2025 survey of 500 US small businesses, 40% of those that outsource marketing ended up dropping or switching
+their agency, and the #1 reason (60%) was no return on investment. Most of that churn happened in the first 6 to 12
+months. Practitioners add two more: feeling like they have to chase you for small things, and budget cuts in a
 slow season. So: make the work visible, answer fast, and give them options before they leave.
 
 ---
@@ -53,5 +54,5 @@ leave on good terms. A good goodbye is a future referral.
 
 ---
 
-Sources: vcita SMB marketing survey (via Localogy); BrightLocal Local Consumer Review Survey 2026 (1,002 US adults).
+Sources: vcita SMB marketing survey 2025 (500 US small businesses); BrightLocal Local Consumer Review Survey 2026 (1,002 US adults).
 Free client-finding skills: github.com/WordRocket/local-client-finder. Results vary.
