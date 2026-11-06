@@ -78,10 +78,18 @@ def convert(md):
             out.append("".join(t) + "</table>"); continue
         if ln.startswith(">"):
             flush()
-            q = []
+            paras, cur = [], []
             while i < len(lines) and lines[i].startswith(">"):
-                q.append(lines[i].lstrip("> ").strip()); i += 1
-            out.append("<blockquote><p>" + inline(" ".join(q)) + "</p></blockquote>"); continue
+                t = lines[i].lstrip(">").strip()
+                if t:
+                    cur.append(t)
+                elif cur:
+                    paras.append(cur); cur = []
+                i += 1
+            if cur:
+                paras.append(cur)
+            out.append("<blockquote>" + "".join('<p style="margin:0 0 8px">' + inline(" ".join(c)) + "</p>" for c in paras)
+                       + "</blockquote>"); continue
         m = re.match(r"^(\s*)(- |\d+\. )(.*)", ln)
         if m:
             flush()

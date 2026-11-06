@@ -31,6 +31,14 @@ Real runs (Chicago, Oct 2026):
 
 [**8 places your next client is hiding**](playbooks/lead-sources-cheat-sheet.md) ([PDF](playbooks/lead-sources-cheat-sheet.pdf)): every lead source with the exact search and the first thing to say, plus the 20-in-20 routine.
 
+[**Get taken seriously with zero clients**](playbooks/proof-kit.md) ([PDF](playbooks/proof-kit.pdf)): the 6-piece proof kit: preview sites, demo sites, a "what customers see today" sheet, your own site, a Google profile (if you qualify), founding clients.
+
+[**Outreach scripts that get replies**](playbooks/outreach-scripts.md) ([PDF](playbooks/outreach-scripts.pdf)): walk-in, call, voicemail, DM, cold email, the two follow-ups, warm intros, what to say when they answer, and the rules.
+
+[**The 15-minute sales call (and "I can't afford it")**](playbooks/sales-call-cheat-sheet.md) ([PDF](playbooks/sales-call-cheat-sheet.pdf)): the call, the 5 questions, the money math, 8 objections with honest answers.
+
+[**Keep clients paying (and sending you friends)**](playbooks/keep-clients-cheat-sheet.md) ([PDF](playbooks/keep-clients-cheat-sheet.pdf)): what the monthly fee covers, the one-page report, the 90-day review, referral asks, the cancel conversation.
+
 ## What you get
 - **A verified lead list**: every lead checked (a web search, or a real browser for broken sites), with rating,
   reviews, phone and a link. No guesses.
